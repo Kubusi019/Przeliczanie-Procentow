@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Większy projekt</title>
+        <link href="style1.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+        <div id="tabsContainer">
+            <div id="tab1" class="tabs">Obliczanie punktów z sprawdzianu</div>
+            <div id="tab2" class="tabs">Wkładka2</div>
+            <div id="tab3" class="tabs">Wkładka3</div>
+            <div id="tab4" class="tabs">Wkładka4</div>
+        </div>
+        <div id="style_container">
+            <div id="container">
+                <div id="rightSide">
+                    <div id="input_table" class="InputResult_side">
+                        <div id="MaxPoints_input" class="inputText_style">
+                            <label for="MaxPoints">Wpisz maksymalną ilość punktów: </label>
+                            <input id="MaxPoints" class="input_style"  type="number"><br>
+                        </div>
+                        <div id="PointsGet_input" class="inputText_style">
+                            <label for="PointsGet">Wpisz zdobytą ilość punktów: </label>
+                            <input id="PointsGet" class="input_style" type="number"><br>
+                        </div>
+                    </div>
+                    <div id="result_table" class="InputResult_side">
+                        <input type="button" value="Sprawdź!" id="check_button" onclick="Check()">
+                    </div>
+                </div>
+                <div id="output_table">
+                    <div id="output_leftside" class="output_sides">
+                        <h4>Oceny procenrtowo:</h4>
+                        <ul>
+                            <li id="sixthGrade" class="grades">6 - (98% - 100%)</li>
+                            <li id="fifthGrade" class="grades">5 - (90% - 97%)</li>
+                            <li id="fourthGrade" class="grades">4 - (70% - 89%)</li>
+                            <li id="thirdGrade" class="grades">3 - (50% - 69%)</li> <!--nice-->
+                            <li id="secoundGrade" class="grades">2 - (30% - 49%)</li>
+                            <li id="firstGrade" class="grades">1 - (0% - 29%)</li>
+                        </ul>
+                    </div>
+                    <div id="output_rightside" class="output_sides">
+                        <h4>Punktacja Ocen:</h4>
+                        <h6 id="Info2">(Widoczne po wpisaniu danych)</h6>
+                        <ul id="GradesByPointsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
